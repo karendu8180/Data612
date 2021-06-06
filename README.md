@@ -10,8 +10,17 @@ df.groupby(['date','company_name'])['average volume'].mean() is showing the mean
 
 #HW2
 I was using the State_Drug_Utilization_Data_2010 provided by Dr.AbdelRahman for HW2.
-df.head() is showing tht top rows of the data. 
+df.head() is showing the top rows of the data. 
 date= df ['Quarter Begin Date'].max() is find the max date of this column.
 df['difference']= (df ['Quarter Begin Date'].max()-df ['Quarter Begin Date']).dt.days is subtracting the max date to every date of the data.
 df['daytomonth']=(df['difference']/30) is coverting the days to months.
 df.to_csv('df_clean.csv', index=False) is saving the data to csv file.
+
+#HW3
+I was using the baseballdatabank-master/Salaries provided by Dr.AbdelRahman for HW3
+df.head() is showing the top rows of the data. 
+df['salary2']= (df ['salary']/100000) is creating a new column to make the number size smaller
+hist, ax = plt.subplots() is using the distplot function from seaborn to create our plot. 
+den, ax = plt.subplots() is creating a density plot for the data. 
+hist_den_rug, ax = plt.subplots() is creating a rug plot for the data.
+count, ax = plt.subplots() is creating a count plot for the data.
