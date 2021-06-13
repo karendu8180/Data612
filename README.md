@@ -24,3 +24,11 @@ hist, ax = plt.subplots() is using the distplot function from seaborn to create 
 den, ax = plt.subplots() is creating a density plot for the data. 
 hist_den_rug, ax = plt.subplots() is creating a rug plot for the data.
 count, ax = plt.subplots() is creating a count plot for the data.
+
+#HW4
+I was using the baseballdatabank-master/AwardsManagers and AwardsShareManagers provided by Dr.AbdelRahman for HW3
+print(data1) and print(data2) are showing the values in two seperate data source.
+data12= data1.merge(data2, left_on='awardID', right_on='awardID') is merging the two data pieces.
+print(np.count_nonzero(data12.isnull()))is counting the missing values in the merged data sets.
+print(data12.fillna(0).iloc[0:29325, 0:12]) is replacing all missing values to 0.
+new = data12.drop(labels=["tie","notes"],axis=1) is dropping columns ("tie" and "notes") since these two columns are full with "NaN".
