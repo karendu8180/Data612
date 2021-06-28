@@ -37,3 +37,23 @@ new = data12.drop(labels=["tie","notes"],axis=1) is dropping columns ("tie" and 
 I was using the baseballdatabank-master provided by Dr.AbdelRahman for HW5.
 df['lgID'] = df['lgID'].astype('category') is coverting a column of non-categorical type into a categorical type.
 df['gameID_str'] = df['gameID'].astype('str') is converting gameID column into a string type.
+
+#HW6
+I was using the baseballdatabank-master provided by Dr.AbdelRahman for HW6.
+import re
+
+year='0000'
+
+m = re.match(pattern='\d\d\d\d', string=year)
+
+if m:
+
+    print('match')
+
+else:
+
+    print('no match')
+is cleaning a column on my data set using regular expression methods.
+def sum(vec), def mean(vec), def get_first_mode(a),def median(lst, def range(lst) are creating a function that returns the mean, sum, mode, median, and range (separately).
+sum1 = df.apply(sum) etc are running the function into your chosen data set using the .apply() method.
+
