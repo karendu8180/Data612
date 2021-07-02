@@ -57,3 +57,9 @@ is cleaning a column on my data set using regular expression methods.
 def sum(vec), def mean(vec), def get_first_mode(a),def median(lst, def range(lst) are creating a function that returns the mean, sum, mode, median, and range (separately).
 sum1 = df.apply(sum) etc are running the function into your chosen data set using the .apply() method.
 
+#HW 7
+I was using the baseballdatabank-master provided by Dr.AbdelRahman for HW5.
+1. Read the summarize_data() and explain the difference between g and df.
+2. def summarize_data_2(f) is summerizing the data for salary. 
+df.groupby("yearID").apply(summarize_data_2) is calculating all of the variables in summerize_data_2 and groupby them by yearID.
+3. Write 1-3 paragraphs to explain the differences or challenges when you applied the function to your chosen dataframe.
